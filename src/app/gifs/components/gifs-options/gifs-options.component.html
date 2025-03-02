@@ -1,0 +1,7 @@
+<div class="flex flex-row flex-wrap gap-2">
+    
+    <button (click)="searchGifs(gifSearch)" class="btn" *ngFor="let gifSearch of gifsSearchHistory">
+      {{gifSearch | titlecase}}
+      </button>
+
+</div>

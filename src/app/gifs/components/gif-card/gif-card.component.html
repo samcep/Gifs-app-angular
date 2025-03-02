@@ -1,0 +1,16 @@
+
+
+
+<div class="card bg-base-100 w-96 shadow-sm">
+    <div class="card-body h-60">
+        <h2 class="card-title">{{gif.title}}</h2>
+        <figure>
+            <shared-lazy-image 
+                [url]="gif.images.downsized_medium.url"
+                [alt]="gif.title"
+                >
+            </shared-lazy-image>
+        </figure>
+        </div>
+</div>
+  

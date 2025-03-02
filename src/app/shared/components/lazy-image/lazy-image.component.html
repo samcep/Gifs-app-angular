@@ -1,0 +1,13 @@
+<img
+    class="object-fill animate__animated animate__fadeIn"
+    [src]="url"
+    [alt]="alt" 
+    (load)="onLoad()"
+    [ngStyle]="{display: hasLoaded ? '' : 'none'}"/>
+
+
+    <img
+    *ngIf="!hasLoaded"
+    class="object-fill"
+    src="assets/loader.svg"
+    alt="Shoes" />
